@@ -1,0 +1,40 @@
+$primary-color: #0a0908;
+$secondary-color: #c77dff;
+
+.navbar {
+  min-height: 10vh;
+  width: 100%;
+  padding: 1rem 0rem;
+  // padding-right: 10rem;
+  background-color: transparent !important;
+  overflow-x: hidden !important;
+  .logo:hover {
+    color: $secondary-color !important;
+    transition: all 0.2s ease-in;
+  }
+  .nav-item {
+    padding: 0rem 4rem;
+    font-weight: 500;
+    @media (max-width: 720px) {
+      padding: 0rem 2rem;
+    }
+  }
+  .nav-link {
+    padding: 1rem 2rem !important;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff !important;
+    font-weight: 400;
+
+    &:hover {
+      color: $secondary-color !important;
+    }
+  }
+
+  .navbar-toggler {
+    border: none !important;
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
