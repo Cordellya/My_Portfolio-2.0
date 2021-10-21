@@ -1,8 +1,11 @@
-$primary-color: #333333;
-$secondary-color: #c77dff;
+$primary-color: rgb(248, 248, 248);
+$secondary-color: #5a189a;
+$third-color: #0a0908;
+$fourth-color: #c77dff;
 $primary-font: 'Poppins', sans-serif;
 $secondary-font: 'Lato', sans-serif;
 
+// FIRST SECTION
 .section-landing {
   position: relative;
   overflow-x: hidden !important;
@@ -13,61 +16,175 @@ $secondary-font: 'Lato', sans-serif;
   align-items: center;
   .landing-text {
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     align-items: center;
+    padding: 10rem 0rem 0rem 5rem;
+    .name {
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      h2 {
+        font-family: $primary-font;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $secondary-color !important;
+        word-spacing: 2px;
+      }
+      .line {
+        width: 8%;
+        height: 2px;
+        background-color: $secondary-color;
+        margin: 0.7rem 0.7rem 2rem 0rem !important;
+      }
+    }
     h1 {
-      padding: 0rem 7rem 0rem 0rem;
       font-size: 6rem;
-      color: $secondary-color !important;
+      color: $third-color !important;
+      padding-bottom: 50px;
     }
 
     h2 {
-      padding: 0rem 7rem 0rem 0rem;
       font-size: 1.5rem;
-      color: white !important;
-      font-family: $secondary-font;
-      font-weight: 300;
-    }
-
-    .line {
-      width: 20%;
-      height: 2px;
-      background-color: #fff;
-      margin: 2rem 7rem 2rem 0rem !important;
+      color: $third-color !important;
+      font-family: $primary-font;
+      font-weight: 500;
     }
   }
 
-  .landing-image {
-    width: 50%;
-    img {
-      width: 500px !important;
-      height: 500px !important;
+  img {
+    padding-top: 7rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-landing {
+    .landing-text {
+      padding: 7rem 0rem 0rem 1rem;
+      h1 {
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+        padding: 0rem;
+      }
     }
   }
 }
 
-@media (max-width: 800px) {
-  .section-landing {
-    .landing-text {
+// WHAT I DO SECTION
+.WhatIDo-section {
+  position: relative;
+  overflow-x: hidden !important;
+  max-width: 100%;
+  min-height: 120vh !important;
+  margin: 4rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../assets/images/whatido_new.png);
+  background-size: cover;
+  background-clip: padding-box;
+  background-position: 20px 0px;
+  .WhatIDo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0rem 0rem 5rem;
+    margin-bottom: 4rem;
+    .name {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      h1 {
-        font-size: 4rem;
-        padding: 0rem;
-        text-align: center;
-      }
+      // justify-content: center;
+      // align-items: center;
       h2 {
-        font-size: 1.7rem;
-        text-align: center;
-        padding: 0rem;
+        font-family: $primary-font;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $secondary-color !important;
+        word-spacing: 2px;
       }
-
       .line {
-        width: 0% !important;
-        padding: 0rem;
-        text-align: center;
+        width: 8%;
+        height: 2px;
+        background-color: $secondary-color;
+        margin: 0.7rem 0.7rem 2rem 0rem !important;
       }
     }
+    h1 {
+      font-size: 6rem;
+      color: $third-color !important;
+      padding-bottom: 50px;
+      font-weight: 600;
+      color: #111029;
+    }
+
+    .WhatIDo-subhead {
+      font-size: 2.2rem;
+      color: $third-color !important;
+      font-family: $primary-font;
+      font-weight: 600;
+      margin: 1rem 0rem 7rem;
+    }
+
+    .btn-about {
+      padding: 1rem 3rem;
+      background-color: $secondary-color !important;
+      border: none !important;
+
+      &:focus {
+        outline: none !important;
+      }
+      .icon {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .WhatIDo-section {
+    position: relative;
+    background-image: none;
+    min-height: 100vh;
+    margin: 0rem 0rem !important;
+    .WhatIDo-text {
+      padding: 7rem 0rem 0rem 1rem;
+      h1 {
+        font-size: 4rem;
+      }
+      .WhatIDo-subhead {
+        font-size: 1.5rem;
+        margin: 1rem 0rem 4rem;
+      }
+    }
+  }
+
+  .WhatIDo-section::before {
+    content: '';
+    background-image: url(../../assets/images/undraw_Organizing_projects_re_9p1k.svg);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 720px) {
+  .WhatIDo-section {
+    .WhatIDo-text {
+      padding: 7rem 0rem 0rem 0rem;
+      h1 {
+        font-size: 3rem !important;
+      }
+    }
+  }
+
+  .WhatIDo-section::before {
+    top: -40px !important;
+    opacity: 0.65 !important;
   }
 }

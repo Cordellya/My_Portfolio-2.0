@@ -11,8 +11,8 @@ const NavHeader = () => {
       className="navbar"
       collapseOnSelect
       expand="lg"
-      bg="dark"
-      variant="dark"
+      bg="light"
+      variant="light"
       fixed="top"
     >
       <Container className="nav-item">

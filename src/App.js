@@ -1,4 +1,7 @@
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { useEffect } from "react-dom";
+// import locomotiveScroll from "locomotive-scroll";
 
 import "./App.scss";
 import NavHeader from "./components/Navbar/Navbar";
@@ -13,8 +16,8 @@ function App() {
     <Router>
       <NavHeader />
       <div className="container">
-        <div className="wrapper">
-          <div className="home">
+        <div className="scroll">
+          <div className="home" data-scroll>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/About" component={About} />
