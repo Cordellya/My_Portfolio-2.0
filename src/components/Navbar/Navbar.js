@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as Link1 } from "react-router-dom";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link as Link2 } from "react-scroll";
 
 import "./style.scss";
 
-import { Navbar, Container, Nav } from "react-bootstrap";
+// import MyProject from "./components/MyProject/MyProject";
 
 const NavHeader = () => {
   return (
@@ -16,7 +18,7 @@ const NavHeader = () => {
       fixed="top"
     >
       <Container className="nav-item">
-        <Navbar.Brand className="logo" as={Link} to="/">
+        <Navbar.Brand className="logo" as={Link1} to="/">
           C.Agatha
         </Navbar.Brand>
         <Navbar.Toggle
@@ -25,13 +27,26 @@ const NavHeader = () => {
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="nav-link" eventKey="1" as={Link} to="/About">
+            <Nav.Link className="nav-link" eventKey="1" as={Link1} to="/About">
               About
             </Nav.Link>
-            <Nav.Link className="nav-link" eventKey="2" href="#my_project">
+            <Nav.Link
+              className="nav-link"
+              eventKey="2"
+              as={Link2}
+              to="my_project"
+              smooth={true}
+              duration={500}
+              spy={true}
+            >
               Project
             </Nav.Link>
-            <Nav.Link className="nav-link" eventKey="3" as={Link} to="/Contact">
+            <Nav.Link
+              className="nav-link"
+              eventKey="3"
+              as={Link1}
+              to="/Contact"
+            >
               Contact
             </Nav.Link>
           </Nav>

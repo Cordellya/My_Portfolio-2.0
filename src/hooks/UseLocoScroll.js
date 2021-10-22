@@ -10,7 +10,7 @@ export default function useLocoScroll() {
       el: scrollEl,
       smooth: true,
       multiplier: 1,
-      class: "is-reveal",
+      class: "container",
     });
 
     return;
