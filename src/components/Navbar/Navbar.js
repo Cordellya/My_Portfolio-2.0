@@ -28,12 +28,7 @@ const NavHeader = () => {
             <Nav.Link className="nav-link" eventKey="1" as={Link} to="/About">
               About
             </Nav.Link>
-            <Nav.Link
-              className="nav-link"
-              eventKey="2"
-              as={Link}
-              to="/My_Project"
-            >
+            <Nav.Link className="nav-link" eventKey="2" href="#my_project">
               Project
             </Nav.Link>
             <Nav.Link className="nav-link" eventKey="3" as={Link} to="/Contact">

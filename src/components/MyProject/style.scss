@@ -1,0 +1,88 @@
+$primary-color: rgb(248, 248, 248);
+$secondary-color: #5a189a;
+$third-color: #0a0908;
+$fourth-color: #c77dff;
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+
+.project-section {
+  overflow-x: hidden !important;
+  max-width: 100%;
+  min-height: 400vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -12rem;
+  .heading-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7rem 0rem 0rem 6rem;
+    .name {
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      h2 {
+        font-family: $primary-font;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $secondary-color !important;
+        word-spacing: 2px;
+      }
+      .line {
+        width: 8%;
+        height: 2px;
+        background-color: $secondary-color;
+        margin: 0.7rem 0.7rem 2rem 0rem !important;
+      }
+    }
+    h1 {
+      font-size: 4rem;
+      color: $third-color !important;
+      padding-bottom: 50px;
+      font-weight: 600;
+    }
+  }
+
+  .card-row {
+    padding: 0rem 0rem 0rem 2rem;
+    .card-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 4rem;
+      .card {
+        width: 550px;
+        border-radius: 25px;
+        overflow: hidden !important;
+        border: none !important;
+        &:hover {
+          box-shadow: 9px 11px 9px -4px rgba(0, 0, 0, 0.28);
+          -webkit-box-shadow: 9px 11px 9px -4px rgba(0, 0, 0, 0.28);
+          -moz-box-shadow: 9px 11px 9px -4px rgba(0, 0, 0, 0.28);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .project-section {
+    margin-top: 0rem;
+    .heading-text {
+      padding: 7rem 0rem 0rem 1rem;
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+        padding: 0rem;
+      }
+    }
+
+    .card-row {
+      padding: 0rem 0rem 0rem 0rem;
+    }
+  }
+}
