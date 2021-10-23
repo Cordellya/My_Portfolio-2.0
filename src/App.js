@@ -6,9 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import NavHeader from "./components/Navbar/Navbar";
 import Home from "./components/HomePage/Home";
-import MyProject from "./components/MyProject/MyProject";
 import About from "./components/About/About";
-import Footer from "./components/Footer/Footer";
 // import useLocoScroll from "./hooks/UseLocoScroll";
 
 function App() {
@@ -23,8 +21,6 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/About" component={About} />
             </Switch>
-            <MyProject />
-            <Footer />
           </div>
         </div>
       </div>

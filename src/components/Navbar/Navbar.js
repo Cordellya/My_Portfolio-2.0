@@ -44,8 +44,11 @@ const NavHeader = () => {
             <Nav.Link
               className="nav-link"
               eventKey="3"
-              as={Link1}
-              to="/Contact"
+              as={Link2}
+              to="footer"
+              smooth={true}
+              duration={500}
+              spy={true}
             >
               Contact
             </Nav.Link>

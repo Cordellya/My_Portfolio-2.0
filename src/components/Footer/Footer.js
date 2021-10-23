@@ -2,17 +2,10 @@ import React from "react";
 import "./style.scss";
 
 import { Row, Col, Container } from "react-bootstrap";
-// import {
-//   faInstagram,
-//   faGithub,
-//   faLinkedin,
-//   faDribbble,
-// } from "@fortawesome/free-brands-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
-    <div className="footer-section">
+    <div className="footer-section" id="footer">
       <Container className="footer-card">
         <Row className="footer-row">
           <Col className="footer-text" sm="6">

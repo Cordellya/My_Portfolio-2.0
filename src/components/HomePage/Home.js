@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typed from "react-typed";
 
 import img1 from "../../assets/images/undraw_Reading_re_29f8.svg";
-// import img2 from "../../assets/images/undraw_Working_late_re_0c3y.svg";
-// import my_image from "../../assets/images/cordel-removebg.png";
+import MyProject from "../MyProject/MyProject";
+import Footer from "../Footer/Footer";
 
 import "./style.scss";
 
@@ -16,6 +16,8 @@ const Home = () => {
     <>
       <FirstSection />
       <SecondSection />
+      <MyProject />
+      <Footer />
     </>
   );
 
@@ -38,7 +40,7 @@ const Home = () => {
                       strings={[
                         "Frontend Development",
                         "UI/UX Design",
-                        "Data Analyst",
+                        "Data Analysis",
                       ]}
                       typeSpeed={100}
                       backSpeed={50}

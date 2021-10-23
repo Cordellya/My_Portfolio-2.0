@@ -78,7 +78,7 @@ $secondary-font: 'Lato', sans-serif;
 
   .section-landing::before {
     content: '';
-    background-image: url(../../assets/images/home-mob2.png);
+    background-image: url(../../assets/images/home-butterfly.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -98,7 +98,7 @@ $secondary-font: 'Lato', sans-serif;
   overflow-x: hidden !important;
   max-width: 100%;
   min-height: 100vh !important;
-  margin: 4rem 0rem;
+  margin: 3.8rem 0rem 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
