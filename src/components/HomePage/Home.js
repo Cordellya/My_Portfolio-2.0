@@ -8,12 +8,14 @@ import Typed from "react-typed";
 import img1 from "../../assets/images/undraw_Reading_re_29f8.svg";
 import MyProject from "../MyProject/MyProject";
 import Footer from "../Footer/Footer";
+import NavHeader from "../Navbar/Navbar";
 
 import "./style.scss";
 
 const Home = () => {
   return (
     <>
+      <NavHeader />
       <FirstSection />
       <SecondSection />
       <MyProject />

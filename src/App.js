@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import locomotiveScroll from "locomotive-scroll";
 
 import "./App.scss";
-import NavHeader from "./components/Navbar/Navbar";
 import Home from "./components/HomePage/Home";
 import About from "./components/About/About";
 // import useLocoScroll from "./hooks/UseLocoScroll";
@@ -13,7 +12,6 @@ function App() {
   // useLocoScroll();
   return (
     <Router>
-      <NavHeader />
       <div className="container" id="main-container">
         <div className="scroll">
           <div className="home">

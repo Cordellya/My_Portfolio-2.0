@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 import my_image from "../../assets/images/cordel-removebg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,6 +14,7 @@ import {
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { SiFlutter, SiCplusplus } from "react-icons/si";
 
 import "./style.scss";
@@ -32,7 +33,13 @@ const About = () => {
   return (
     <div className="about-section">
       <Container>
-        <Row>
+        <Link to="/">
+          <div className="back-home">
+            <FontAwesomeIcon icon={faArrowLeft} className="icon-back" />
+            <p>Back To Home</p>
+          </div>
+        </Link>
+        <Row className="row-content">
           <Col md="5" className="my__image">
             <img src={my_image} alt="" />
           </Col>
