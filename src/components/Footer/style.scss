@@ -6,19 +6,16 @@ $primary-font: 'Poppins', sans-serif;
 $secondary-font: 'Lato', sans-serif;
 
 .footer-section {
-  min-height: 40vh;
+  min-height: 100%;
   max-width: 100%;
   display: flex;
   justify-content: flex-end !important;
   align-items: center;
-  padding-top: 3rem;
-  //   background-image: url('../../assets/images/footer-img.png');
-  //   background-size: cover;
-  //   background-position: center;
+  padding-top: 50px;
 
   .footer-card {
     width: 90%;
-    min-height: 40vh;
+    max-height: inherit;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.49);
@@ -28,7 +25,7 @@ $secondary-font: 'Lato', sans-serif;
       display: flex;
       justify-content: center !important;
       align-items: stretch !important;
-      padding: 7rem 0rem 0rem 1rem;
+      padding: 100px 0px 0px 20px;
       .name {
         display: flex;
         // justify-content: center;
@@ -44,7 +41,7 @@ $secondary-font: 'Lato', sans-serif;
           width: 8%;
           height: 2px;
           background-color: $secondary-color;
-          margin: 0.7rem 0.7rem 1rem 0rem !important;
+          margin: 12px 10px 20px 0px !important;
         }
       }
       h1 {
@@ -58,7 +55,7 @@ $secondary-font: 'Lato', sans-serif;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 1rem 0rem 0rem;
+      padding: 15px 0px 0px;
       a {
         padding: 1rem 0rem;
         color: black;
@@ -83,7 +80,7 @@ $secondary-font: 'Lato', sans-serif;
     .footer-card {
       width: 100%;
       .footer-text {
-        margin-top: -5rem;
+        margin-top: -50px;
         h1 {
           font-size: 3rem;
         }

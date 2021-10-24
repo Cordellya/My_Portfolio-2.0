@@ -8,16 +8,16 @@ $secondary-font: 'Lato', sans-serif;
 .project-section {
   overflow-x: hidden !important;
   max-width: 100%;
-  min-height: 400vh;
+  min-height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: -5rem;
+
   .heading-text {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 7rem 0rem 0rem 6rem;
+    padding: 130px 0px 0px 80px;
     .name {
       display: flex;
       // justify-content: center;
@@ -33,19 +33,19 @@ $secondary-font: 'Lato', sans-serif;
         width: 8%;
         height: 2px;
         background-color: $secondary-color;
-        margin: 0.7rem 0.7rem 2rem 0rem !important;
+        margin: 12px 10px 20px 0px !important;
       }
     }
     h1 {
       font-size: 4rem;
       color: $third-color !important;
-      padding-bottom: 50px;
+      padding-bottom: 20px;
       font-weight: 600;
     }
   }
 
   .card-row {
-    padding: 0rem 0rem 0rem 2rem;
+    padding: 0px 0px 50px 20px;
     .card-col {
       display: flex;
       justify-content: center;
@@ -69,7 +69,7 @@ $secondary-font: 'Lato', sans-serif;
         }
 
         .card-body {
-          padding: 2rem !important;
+          padding: 20px !important;
         }
 
         .btn-card {

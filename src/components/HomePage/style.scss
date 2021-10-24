@@ -18,7 +18,7 @@ $secondary-font: 'Lato', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7rem 0rem 0rem 7rem;
+    padding: 150px 0px 0px 80px;
     .name {
       display: flex;
       // justify-content: center;
@@ -40,7 +40,7 @@ $secondary-font: 'Lato', sans-serif;
     h1 {
       font-size: 6rem;
       color: $third-color !important;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
     }
 
     h2 {
@@ -97,8 +97,8 @@ $secondary-font: 'Lato', sans-serif;
   position: relative;
   overflow-x: hidden !important;
   max-width: 100%;
-  min-height: 100vh !important;
-  margin: 3.8rem 0rem 3rem;
+  min-height: 100vh;
+  margin: 20px 0px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,8 +115,8 @@ $secondary-font: 'Lato', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem 0rem 0rem 5rem;
-    margin-bottom: 4rem;
+    padding: 150px 0px 0px 80px;
+    margin-bottom: 60px;
     .name {
       display: flex;
       // justify-content: center;
@@ -132,7 +132,7 @@ $secondary-font: 'Lato', sans-serif;
         width: 8%;
         height: 2px;
         background-color: $secondary-color;
-        margin: 0.7rem 0.7rem 2rem 0rem !important;
+        margin: 12px 10px 20px 0px !important;
       }
     }
     h1 {

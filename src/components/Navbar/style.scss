@@ -9,7 +9,7 @@ $secondary-font: 'Lato', sans-serif;
   width: 100%;
   padding: 1rem 0rem;
   // padding-right: 10rem;
-  background-color: transparent !important;
+  background-color: $primary-color !important;
   overflow-x: hidden !important;
   .logo {
     color: $third-color !important;

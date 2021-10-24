@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import {
   Row,
   Container,
@@ -65,6 +65,12 @@ const MyProject = () => {
     },
   ];
 
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
+
   return (
     <div className="project-section" id="my_project">
       <Container>
@@ -79,10 +85,27 @@ const MyProject = () => {
             </div>
           </Col>
         </Row>
-        <Row md={2} className="card-row">
-          {cardInfo.map((card, idx) => (
-            <Col key={idx} className="card-col">
-              <Card className="card">
+        <CardProject />
+      </Container>
+    </div>
+  );
+
+  function CardProject() {
+    return (
+      <Row md={2} className="card-row">
+        {cardInfo.map((card, idx) => (
+          <Col key={idx} className="card-col">
+            <Card className="card">
+              {width < 760 ? (
+                <OverlayTrigger
+                  placement="bottom"
+                  overlay={
+                    <Tooltip id={`tooltip-right`}>{card.mockup}</Tooltip>
+                  }
+                >
+                  <Card.Img variant="top" src={card.image} />
+                </OverlayTrigger>
+              ) : (
                 <OverlayTrigger
                   placement={card.placement}
                   overlay={
@@ -91,26 +114,25 @@ const MyProject = () => {
                 >
                   <Card.Img variant="top" src={card.image} />
                 </OverlayTrigger>
-
-                <Card.Body className="card-body">
-                  <Card.Title>{card.title}</Card.Title>
-                  <Card.Text>{card.desc}</Card.Text>
-                  <Card.Text>
-                    Creator: <strong>{card.creator}</strong>
-                  </Card.Text>
-                  {idx != 4 ? (
-                    <Button size="md" className="btn-card" href={card.link}>
-                      View
-                    </Button>
-                  ) : null}
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </div>
-  );
+              )}
+              <Card.Body className="card-body">
+                <Card.Title>{card.title}</Card.Title>
+                <Card.Text>{card.desc}</Card.Text>
+                <Card.Text>
+                  Creator: <strong>{card.creator}</strong>
+                </Card.Text>
+                {idx != 4 ? (
+                  <Button size="md" className="btn-card" href={card.link}>
+                    View
+                  </Button>
+                ) : null}
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    );
+  }
 };
 
 export default MyProject;
