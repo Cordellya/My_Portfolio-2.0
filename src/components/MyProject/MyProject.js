@@ -71,25 +71,6 @@ const MyProject = () => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
 
-  return (
-    <div className="project-section" id="my_project">
-      <Container>
-        <Row>
-          <Col md="12" className="heading-text">
-            <div className="wrapper">
-              <div className="name">
-                <div className="line"></div>
-                <h2>Portfolio</h2>
-              </div>
-              <h1>Look at My Project</h1>
-            </div>
-          </Col>
-        </Row>
-        <CardProject />
-      </Container>
-    </div>
-  );
-
   function CardProject() {
     return (
       <Row md={2} className="card-row">
@@ -133,6 +114,25 @@ const MyProject = () => {
       </Row>
     );
   }
+
+  return (
+    <div className="project-section" id="my_project">
+      <Container>
+        <Row>
+          <Col md="12" className="heading-text">
+            <div className="wrapper">
+              <div className="name">
+                <div className="line"></div>
+                <h2>Portfolio</h2>
+              </div>
+              <h1>Look at My Project</h1>
+            </div>
+          </Col>
+        </Row>
+        <CardProject />
+      </Container>
+    </div>
+  );
 };
 
 export default MyProject;
