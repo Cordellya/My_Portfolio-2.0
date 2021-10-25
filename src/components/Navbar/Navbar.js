@@ -1,5 +1,4 @@
 import React from "react";
-import { Link as Link1 } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link as Link2 } from "react-scroll";
 
@@ -18,7 +17,14 @@ const NavHeader = () => {
       fixed="top"
     >
       <Container className="nav-item">
-        <Navbar.Brand className="logo" as={Link1} to="/">
+        <Navbar.Brand
+          className="logo"
+          as={Link2}
+          to="home"
+          smooth={true}
+          duration={500}
+          spy={true}
+        >
           C.Agatha
         </Navbar.Brand>
         <Navbar.Toggle
@@ -27,7 +33,15 @@ const NavHeader = () => {
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="nav-link" eventKey="1" as={Link1} to="/About">
+            <Nav.Link
+              className="nav-link"
+              eventKey="1"
+              as={Link2}
+              to="about"
+              smooth={true}
+              duration={500}
+              spy={true}
+            >
               About
             </Nav.Link>
             <Nav.Link

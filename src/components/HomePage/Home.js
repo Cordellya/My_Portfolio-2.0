@@ -25,7 +25,7 @@ const Home = () => {
 
   function FirstSection() {
     return (
-      <div className="section-landing">
+      <div className="section-landing" id="home">
         <Container>
           <Row>
             <Col className="landing-text" md="6">
@@ -63,7 +63,7 @@ const Home = () => {
 
   function SecondSection() {
     return (
-      <div className="WhatIDo-section">
+      <div className="WhatIDo-section" id="about">
         <Container>
           <Row>
             <Col className="WhatIDo-text" md="7" sm="10">
