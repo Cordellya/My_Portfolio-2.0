@@ -19,9 +19,9 @@ const Footer = () => {
           </Col>
           <Col sm="6" className="link">
             <a href="https://github.com/Cordellya">Github</a>
-            <a href="https://github.com/Cordellya">LinkedIn</a>
-            <a href="https://github.com/Cordellya">Dribble</a>
-            <a href="https://github.com/Cordellya">Instagram</a>
+            <a href="https://www.linkedin.com/in/cordellya-agatha">LinkedIn</a>
+            <a href="https://dribbble.com/cxgtha">Dribble</a>
+            <a href="http://instagram.com/cxgtha">Instagram</a>
           </Col>
         </Row>
       </Container>
